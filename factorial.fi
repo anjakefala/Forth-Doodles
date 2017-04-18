@@ -1,5 +1,15 @@
 : FACTORIAL ( n -- n! )
-
+1 \ n 1
+TUCK \ 1 n 1
+1 \ 1 n 1 1
+- \ 1 n 0
+DO \ TOTAL
+I \ TOTAL I
+1 \ TOTAL I 1
++ \ TOTAL I+1
+* \ TOTAL*I+1
+LOOP
 ;
 
 3 FACTORIAL .
+4 FACTORIAL .
