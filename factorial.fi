@@ -1,0 +1,5 @@
+: FACTORIAL ( n -- n! )
+
+;
+
+3 FACTORIAL .
